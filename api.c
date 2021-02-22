@@ -54,7 +54,7 @@ void rec_preorder(Arv *a, void (*visit)(Arv *))
     if (a == NULL)
         return;
 
-    (*visit)(a);
+    //(*visit)(a);
     rec_preorder(a->esq, printChave);
     rec_preorder(a->dir, printChave);
 }
@@ -64,7 +64,7 @@ void rec_inorder(Arv *a, void (*visit)(Arv *))
     if (a == NULL)
         return;
     rec_inorder(a->esq, printChave);
-    (*visit)(a);
+    //(*visit)(a);
     rec_inorder(a->dir, printChave);
 }
 
